@@ -1,0 +1,418 @@
+/* Réinitialisation des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeebeb;
+    background-image: url('background2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Header et Navbar styles */
+header {
+    background-color: #A3CD39;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo img {
+    max-width: 100px;
+}
+
+nav {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #8bb527;
+}
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    background: url('path/to/hero-image.jpg') no-repeat center center/cover;
+    height: 400px;
+    color: white;
+    text-align: center;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Content section styles */
+.content {
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #A3CD39;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #8bb527;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #A3CD39;
+    color: white;
+    bottom: 0; 
+    width: 100%;
+
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Additional styles for promo and other sections */
+#promo .content, .promo-page #promotions {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.promo-items, .promo-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.promo-item, .promo {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden; /* Assure que le contenu ne déborde pas */
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 40px);
+}
+
+.promo-item img, .promo img, .menu-item img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Limite la hauteur des images */
+    object-fit: cover; /* Ajuste l'image pour remplir le conteneur sans la déformer */
+}
+
+.promo-item h3, .menu-item h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.promo-item p, .menu-item p {
+    margin: 10px;
+}
+
+.promo-item .price, .menu-item .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Exemple de CSS pour centrer et adapter les images dans les éléments de menu */
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espace entre les éléments de menu */
+}
+
+.menu-item {
+    width: 100%;
+    max-width: 600px; /* Largeur maximale de chaque élément de menu */
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre pour effet de carte */
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.menu-image {
+    width: 100%;
+    height: auto; /* Maintient le ratio d'aspect */
+    max-height: 400px; /* Limite la hauteur maximale de l'image */
+    object-fit: cover; /* Adapte l'image à la taille du conteneur en recadrant */
+    border-radius: 8px; /* Coins arrondis pour correspondre au conteneur */
+}
+
+.menu-item h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.menu-item p {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e74c3c; /* Couleur rouge pour les prix */
+}
+
+/* Responsive pour les petites écrans */
+@media (max-width: 600px) {
+    .menu-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .menu-image {
+        max-height: 200px; /* Réduire la hauteur sur les petits écrans */
+    }
+}
+
+/* Réduire la marge entre la navbar et les sections */
+header {
+    margin-bottom: 0; /* Éliminer la marge inférieure */
+}
+
+nav {
+    margin: 0;
+    padding: 10px 0; /* Ajuster la marge de la navigation */
+    background-color: #a0d468; /* Exemple de couleur de fond pour la navbar */
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px; /* Réduire l'espacement entre les éléments de la liste */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Assurer que l'image en fond couvre bien l'écran sans trop d'espace */
+.hero {
+    position: relative;
+    background: url('background2.png') no-repeat center center; /* Remplacer par l'image de fond réelle */
+    background-size: cover;
+    height: 70vh; /* Hauteur de la section d'accueil */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Réduire l'espace entre les sections */
+section {
+    padding: 40px 20px; /* Réduire la hauteur de la section */
+    margin-top: -20px; /* Superpose légèrement les sections pour réduire l'espace */
+    background-color: white; /* Couleur de fond des sections */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère pour les sections */
+}
+
+section#accueil {
+    margin-top: 0; /* Élimine la marge supérieure de la section d'accueil */
+    padding-top: 20px; /* Ajoute un peu de padding en haut pour respirer */
+}
+
+section#histoire {
+    margin-top: -20px;
+}
+
+section#contact {
+    margin-top: -20px;
+}
+
+/* Ajouter un peu de style aux formulaires de contact */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espace entre les champs du formulaire */
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #a0d468;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #8cc64c; /* Couleur au survol */
+}
+
+.location {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Ajoutez cette règle pour l'image de fond */
+body {
+    background-image: url('background3.png'); /* Chemin relatif à l'image de fond */
+    background-size: cover; /* Couvre toute la page */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-attachment: fixed; /* Fixe l'image lors du défilement */
+    background-position: center; /* Centre l'image */
+}
+
+/* Style des sections */
+section {
+    background: rgba(255, 255, 255, 0.8); /* Fond blanc semi-transparent pour la lisibilité */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px; /* Arrondi des coins */
+}
+
+/* Style du logo */
+.logo img {
+    max-width: 200px; /* Taille maximum du logo */
+}
+
+/* Style du conteneur des promotions */
+.promo-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Style individuel des promotions */
+.promo {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.promo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}

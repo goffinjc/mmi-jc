@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison de la Kassaverie</title>
+    <link rel="stylesheet" href="kassaverie.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- Utilisez un chemin relatif pour l'image -->
+            <img src="quelque_chose.png" alt="Maison de la Kassaverie">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="promo.html#Promo">Promo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil" class="hero">
+        <div class="overlay">
+            <h1>Maison de la Kassaverie</h1>
+            <p>Restaurant Antillais</p>
+        </div>
+    </section>
+
+    <section id="histoire">
+        <div class="content">
+            <h2>À propos</h2>
+            <br>
+            <p>L'histoire de la kassav guadeloupéenne remonte à l'époque de l'arrivée des esclaves africains dans les Caraïbes.
+            <br>
+            ​
+            Ces derniers, privés de leurs ingrédients traditionnels pour la préparation du pain, ont découvert le manioc, une plante indigène des Amériques.
+            ​
+            Le manioc était déjà cultivé par les populations amérindiennes en Guadeloupe, et les esclaves africains ont adapté leurs connaissances pour créer une nouvelle forme de pain à base de manioc, appelée kassav. Ils ont utilisé le manioc pour produire une farine fine et douce, qui a ensuite été transformée en galettes.</p>
+            <br>
+            <h3>Recette</h3>
+            <br>
+            <p>La préparation de la kassav est un processus complexe et laborieux. Après avoir récolté le manioc, il est épluché, lavé et râpé finement. La pâte obtenue est ensuite pressée pour en extraire le jus toxique, connu sous le nom de jus de manioc. Une fois le jus éliminé, la pulpe est séchée et réduite en une fine poudre, qui est ensuite utilisée pour préparer les galettes de kassav.
+            ​
+            Traditionnellement, la kassav est cuite sur une plaque chaude en terre cuite, appelée "comal". La galette est aplatie et déposée sur le comal chaud, où elle cuit lentement jusqu'à ce qu'elle soit dorée et croustillante.
+            ​
+            La kassav est devenue un aliment de base de la cuisine guadeloupéenne, appréciée pour sa polyvalence et sa longue durée de conservation. Elle est consommée à tout moment de la journée, que ce soit en accompagnement de plats salés tels que les viandes ou les poissons, ou en version sucrée avec des confitures ou du chocolat.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="content">
+            <h2>Contact et Lieu</h2>
+            <br>
+            <form action="donnees_site.php" method="POST">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone">
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Envoyer</button>
+            </form>
+            <div class="location">
+                <p>Îlet Perou, 97130, Capesterre-Belle-Eau<br>
+                Lundi à Dimanche: 05:00 - 18:00<br>
+                0590 691 28 05 28</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy;  2024 Maison de la Kassaverie - Tous droits réservés
+    <br>
+            
+            <a href="cgu.html" target="_blank">CGU</a> | 
+            <a href="cgv.html" target="_blank">CGV</a> | 
+            <a href="confidentialite.html" target="_blank">Confidentialité</a> | 
+            <a href="cookies.html" target="_blank">Cookies</a>
+        </p>
+    </footer>
+</body>
+</html>
+
